@@ -1,0 +1,96 @@
+===========================================================
+TRABAJO FINAL - ESTRUCTURA DE LOS LENGUAJES
+Facultad Politécnica - Universidad Nacional de Asunción
+Alumno: Tomas Unzain
+Año: 2025 - 2do Semestre
+===========================================================
+
+📘 DESCRIPCIÓN GENERAL
+Este trabajo implementa tres problemas propuestos en cinco lenguajes de programación:
+Python, R, Ruby, C# y JavaScript. 
+Cada problema contiene dos versiones: 
+  - Versión manual (sin funciones integradas)
+  - Versión integrada (usando funciones/librerías propias del lenguaje)
+
+Los problemas buscan comparar estructuras, control de flujo, tipos de datos, subrutinas
+y manejo de errores según los criterios de Sebesta:
+facilidad de uso, expresividad, confiabilidad y eficiencia.
+
+-----------------------------------------------------------
+📂 ESTRUCTURA DE CARPETAS
+-----------------------------------------------------------
+
+TrabajoFinal_EstructuraLenguajes/
+│
+├── Problema1/
+│   ├── Archivos fuente (Python, R, Ruby, C#, JS)
+│   ├── pseudocodigo.txt
+│   ├── setup.sh        → instala dependencias
+│   ├── run.sh          → ejecuta todos los lenguajes
+│
+├── Problema2/
+│   ├── Archivos fuente (Python, R, Ruby, C#, JS)
+│   ├── pseudocodigo.txt
+│   ├── setup.sh
+│   ├── run.sh
+│
+├── Problema3/
+│   ├── Archivos fuente (Python, R, Ruby, C#, JS)
+│   ├── pseudocodigo.txt
+│   ├── setup.sh
+│   ├── run.sh
+│
+├── informe/
+│   └── Informe_TomasUnzain.pdf
+│
+└── LEEME.txt
+
+-----------------------------------------------------------
+⚙️ INSTRUCCIONES DE EJECUCIÓN
+-----------------------------------------------------------
+
+1️⃣ Ingresar a la carpeta del problema:
+    cd Problema1   (o Problema2 / Problema3)
+
+2️⃣ Instalar dependencias:
+    chmod +x setup.sh run.sh
+    ./setup.sh
+
+3️⃣ Ejecutar todos los lenguajes:
+    ./run.sh
+
+4️⃣ Guardar salida (opcional):
+    ./run.sh | tee resultados.txt
+
+Requiere Ubuntu 22.04+ con permisos de sudo.
+Los scripts crean entornos virtuales de Python e instalan:
+  - Python3, pip, numpy
+  - R-base
+  - Ruby-full
+  - Node.js / npm
+  - .NET SDK 8.0
+
+-----------------------------------------------------------
+📊 RESULTADOS ESPERADOS
+-----------------------------------------------------------
+- Problema 1: Listas ordenadas y filtradas correctamente.
+- Problema 2: Búsquedas secuenciales con mensajes "OK", "EMPTY" o "NOT_FOUND".
+- Problema 3: Matriz de correlación 3×3 con r≈1.0 en diagonal y valores altos entre Total y otras variables.
+
+-----------------------------------------------------------
+✍️ AUTOR
+-----------------------------------------------------------
+Nombre: Tomas Unzain  
+Carrera: Ingeniería en Informática  
+Materia: Estructura de los Lenguajes  
+Profesor: C. D. Von Lucken  
+Fecha de entrega: 10 de noviembre de 2025  
+Contacto: tomasunza@gmail.com
+
+-----------------------------------------------------------
+✔️ NOTAS
+-----------------------------------------------------------
+- Cada archivo de código incluye comentarios y separación entre las versiones manuales e integradas.
+- Los datos de prueba están embebidos para simplificar la ejecución sin conexión a Kaggle.
+- El informe incluye el análisis comparativo de los lenguajes según los criterios de Sebesta.
+===========================================================

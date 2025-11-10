@@ -1,0 +1,22 @@
+func mean(list):
+    return sum(list) / length(list)
+
+func stddev(list):
+    μ = mean(list)
+    sumsq = Σ((x - μ)^2)
+    return sqrt(sumsq / (n-1))
+
+func covariance(listX, listY):
+    μx = mean(listX)
+    μy = mean(listY)
+    Σ = Σ((x - μx)*(y - μy))
+    return Σ / (n-1)
+
+func corr(listX, listY):
+    return covariance(listX, listY) / (stddev(listX)*stddev(listY))
+
+func matrix_corr(dataset):   // dataset = {X1,X2,X3}
+    for i in [X1,X2,X3]:
+        for j in [X1,X2,X3]:
+            M[i][j] = corr(dataset[i], dataset[j])
+    return M

@@ -1,0 +1,10 @@
+func sort_manual(list, key):
+    n = longitud(list)
+    para i desde 0 hasta n-2:
+        min_idx = i
+        para j desde i+1 hasta n-1:
+            si list[j][key] < list[min_idx][key]:
+                min_idx = j
+        si min_idx != i:
+            intercambiar list[i] <-> list[min_idx]
+    retornar list

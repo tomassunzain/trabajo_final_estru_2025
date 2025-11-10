@@ -1,0 +1,10 @@
+func search_seq(list, predicate):
+    if list == null or length(list) == 0:
+        return ([], "EMPTY")
+    results = []
+    for item in list:
+        if predicate(item) == true:
+            append(results, item)
+    if length(results) == 0:
+        return ([], "NOT_FOUND")
+    return (results, "OK")
